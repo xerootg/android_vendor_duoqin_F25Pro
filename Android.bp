@@ -1,0 +1,92 @@
+// Automatically generated - vendor app imports for F25Pro
+
+soong_namespace {
+}
+
+android_app_import {
+    name: "AgenewSensorHub",
+    owner: "duoqin",
+    apk: "proprietary/vendor/app/AgenewSensorHub/AgenewSensorHub.apk",
+    presigned: true,
+    soc_specific: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+android_app_import {
+    name: "GoogleNetworkStackResOverlay",
+    owner: "duoqin",
+    apk: "proprietary/vendor/app/GoogleNetworkStackResOverlay/GoogleNetworkStackResOverlay.apk",
+    presigned: true,
+    soc_specific: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+android_app_import {
+    name: "GoogleTetheringResOverlay",
+    owner: "duoqin",
+    apk: "proprietary/vendor/app/GoogleTetheringResOverlay/GoogleTetheringResOverlay.apk",
+    presigned: true,
+    soc_specific: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+android_app_import {
+    name: "InProcessTetheringResOverlay",
+    owner: "duoqin",
+    apk: "proprietary/vendor/app/InProcessTetheringResOverlay/InProcessTetheringResOverlay.apk",
+    presigned: true,
+    soc_specific: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+android_app_import {
+    name: "NetworkStackInProcessResOverlay",
+    owner: "duoqin",
+    apk: "proprietary/vendor/app/NetworkStackInProcessResOverlay/NetworkStackInProcessResOverlay.apk",
+    presigned: true,
+    soc_specific: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+android_app_import {
+    name: "NetworkStackResOverlay",
+    owner: "duoqin",
+    apk: "proprietary/vendor/app/NetworkStackResOverlay/NetworkStackResOverlay.apk",
+    presigned: true,
+    soc_specific: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+android_app_import {
+    name: "SensorHub",
+    owner: "duoqin",
+    apk: "proprietary/vendor/app/SensorHub/SensorHub.apk",
+    presigned: true,
+    soc_specific: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+android_app_import {
+    name: "TetheringResOverlay",
+    owner: "duoqin",
+    apk: "proprietary/vendor/app/TetheringResOverlay/TetheringResOverlay.apk",
+    presigned: true,
+    soc_specific: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
