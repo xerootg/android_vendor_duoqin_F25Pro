@@ -8,6 +8,7 @@ android_app_import {
     owner: "duoqin",
     apk: "proprietary/vendor/app/AgenewSensorHub/AgenewSensorHub.apk",
     presigned: true,
+    preprocessed: true,
     soc_specific: true,
     dex_preopt: {
         enabled: false,
@@ -19,6 +20,7 @@ android_app_import {
     owner: "duoqin",
     apk: "proprietary/vendor/app/GoogleNetworkStackResOverlay/GoogleNetworkStackResOverlay.apk",
     presigned: true,
+    preprocessed: true,
     soc_specific: true,
     dex_preopt: {
         enabled: false,
@@ -30,6 +32,7 @@ android_app_import {
     owner: "duoqin",
     apk: "proprietary/vendor/app/GoogleTetheringResOverlay/GoogleTetheringResOverlay.apk",
     presigned: true,
+    preprocessed: true,
     soc_specific: true,
     dex_preopt: {
         enabled: false,
@@ -41,6 +44,7 @@ android_app_import {
     owner: "duoqin",
     apk: "proprietary/vendor/app/InProcessTetheringResOverlay/InProcessTetheringResOverlay.apk",
     presigned: true,
+    preprocessed: true,
     soc_specific: true,
     dex_preopt: {
         enabled: false,
@@ -52,6 +56,7 @@ android_app_import {
     owner: "duoqin",
     apk: "proprietary/vendor/app/NetworkStackInProcessResOverlay/NetworkStackInProcessResOverlay.apk",
     presigned: true,
+    preprocessed: true,
     soc_specific: true,
     dex_preopt: {
         enabled: false,
@@ -63,6 +68,7 @@ android_app_import {
     owner: "duoqin",
     apk: "proprietary/vendor/app/NetworkStackResOverlay/NetworkStackResOverlay.apk",
     presigned: true,
+    preprocessed: true,
     soc_specific: true,
     dex_preopt: {
         enabled: false,
@@ -74,6 +80,7 @@ android_app_import {
     owner: "duoqin",
     apk: "proprietary/vendor/app/SensorHub/SensorHub.apk",
     presigned: true,
+    preprocessed: true,
     soc_specific: true,
     dex_preopt: {
         enabled: false,
@@ -85,6 +92,7 @@ android_app_import {
     owner: "duoqin",
     apk: "proprietary/vendor/app/TetheringResOverlay/TetheringResOverlay.apk",
     presigned: true,
+    preprocessed: true,
     soc_specific: true,
     dex_preopt: {
         enabled: false,
