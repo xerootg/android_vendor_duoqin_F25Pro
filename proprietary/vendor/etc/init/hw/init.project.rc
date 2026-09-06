@@ -1,0 +1,125 @@
+import /vendor/etc/init/hw/init.mtkgki.rc
+
+# MTK project .rc configure
+
+on early-init
+    exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules trace_mmstat.ko
+
+on init
+    mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
+    mkdir /storage/usbotg 0700 root root
+
+on post-fs-data
+
+#Camera
+    chmod 0660 /dev/MAINAF
+    chown system camera /dev/MAINAF
+
+    chmod 0660 /dev/MAINAF2
+    chown system camera /dev/MAINAF2
+
+    chmod 0660 /dev/SUBAF
+    chown system camera /dev/SUBAF
+
+    chmod 0660 /dev/GAF001AF
+    chown system camera /dev/GAF001AF
+
+    chmod 0660 /dev/DW9714AF
+    chown system camera /dev/DW9714AF
+
+    chmod 0660 /dev/LC898212AF
+    chown system camera /dev/LC898212AF
+
+    chmod 0660 /dev/BU64745GWZAF
+    chown system camera /dev/BU64745GWZAF
+
+#SMB
+    chown system system /proc/smb/ScreenComm
+    chmod 0660 /proc/smb/ScreenComm
+
+    chmod 0660 /dev/spm
+    chown system system /dev/spm
+
+#Battery Capacity Range protected
+    chmod 0664 /sys/class/power_supply/battery/input_suspend
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0664 /sys/class/power_supply/battery/battery_charging_enabled
+    chown system system /sys/class/power_supply/battery/battery_charging_enabled
+#keyled	
+    chmod 0664 /sys/class/leds/button-backlight/brightness
+    chown system system /sys/class/leds/button-backlight/brightness
+# vibrator
+    chown system system /sys/class/leds/aw_vibrator/trigger
+    chmod 0664 /sys/class/leds/vibrator/aw_trigger
+    chown system system /sys/class/leds/aw_vibrator/activate
+    chmod 0664 /sys/class/leds/aw_vibrator/activate
+    chown system system /sys/class/leds/aw_vibrator/brightness
+    chown system system /sys/class/leds/aw_vibrator/duration
+    chmod 0664 /sys/class/leds/aw_vibrator/duration
+    chown system system /sys/class/leds/aw_vibrator/state
+    chmod 0666 /sys/class/leds/aw_vibrator/cali       
+    chmod 0666 /sys/class/leds/aw_vibrator/f0_save
+on init
+    # Refer to http://source.android.com/devices/tech/storage/index.html
+    # It said, "Starting in Android 4.4, multiple external storage devices are surfaced to developers through
+    #           Context.getExternalFilesDirs(), Context.getExternalCacheDirs(), and Context.getObbDirs().
+    #           External storage devices surfaced through these APIs must be a semi-permanent part of the device (such as an SD card slot in a battery compartment).
+    #           Developers expect data stored in these locations to be available over long periods of time."
+    # Therefore, if the target doesn't support sd hot-plugging (Ex: the SD card slot in a battery compartment), we need to export SECONDARY_STORAGE in 'boot' section
+    #
+    # export SECONDARY_STORAGE /storage/sdcard1
+
+service fuse_usbotg /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw/usbotg /storage/usbotg
+    class late_start
+    disabled
+
+# start mmstat
+on property:sys.boot_completed=1
+    mkdir /sys/kernel/tracing/instances/mmstat 711
+    write /sys/kernel/tracing/instances/mmstat/tracing_on 0
+    write /sys/kernel/tracing/instances/mmstat/buffer_size_kb 16
+    write /sys/kernel/tracing/instances/mmstat/events/mmstat/enable 1
+    write /sys/kernel/tracing/instances/mmstat/tracing_on 1
+
+#start Swap
+service swap_agn /vendor/bin/swap_agn.sh
+    class core
+    user root
+    group root
+    disabled
+    oneshot
+
+service swap_agn_3g /vendor/bin/swap_agn.sh 3G
+    class core
+    user root
+    group root
+    disabled
+    oneshot
+
+service swap_agn_5g /vendor/bin/swap_agn.sh 5G
+    class core
+    user root
+    group root
+    disabled
+    oneshot
+
+service swap_agn_8g /vendor/bin/swap_agn.sh 8G
+    class core
+    user root
+    group root
+    disabled
+    oneshot
+
+on property:sys.start_swap_on=0
+    start swap_agn
+
+on property:sys.start_swap_on=1
+    start swap_agn_3g
+
+on property:sys.start_swap_on=2
+    start swap_agn_5g
+
+on property:sys.start_swap_on=3
+    start swap_agn_8g
+
+#end Swap

@@ -1,0 +1,12 @@
+service nvram_daemon /vendor/bin/nvram_daemon
+    class core
+    user root
+    group system radio wifi audio bluetooth media
+    oneshot
+
+
+on property:vendor.scancamera.sys.enable=0
+    setprop vendor.cam.scan.enable 0
+
+on property:vendor.scancamera.sys.enable=1
+    setprop vendor.cam.scan.enable 1
