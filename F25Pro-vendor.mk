@@ -604,8 +604,6 @@ PRODUCT_COPY_FILES += \
     vendor/duoqin/F25Pro/proprietary/vendor/lib64/libwifi-hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal.so \
     vendor/duoqin/F25Pro/proprietary/vendor/lib64/libwifitest.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifitest.so \
     vendor/duoqin/F25Pro/proprietary/vendor/lib64/meta_wifi_data.so:$(TARGET_COPY_OUT_VENDOR)/lib64/meta_wifi_data.so \
-    vendor/duoqin/F25Pro/proprietary/vendor/overlay/WifiResMainlineOverlay/WifiResMainlineOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/WifiResMainlineOverlay/WifiResMainlineOverlay.apk \
-    vendor/duoqin/F25Pro/proprietary/vendor/overlay/WifiResOverlay/WifiResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/WifiResOverlay/WifiResOverlay.apk \
     vendor/duoqin/F25Pro/proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.4-service.widevine \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/duoqin/F25Pro/proprietary/vendor/lib/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrm.so \
@@ -983,7 +981,6 @@ PRODUCT_COPY_FILES += \
     vendor/duoqin/F25Pro/proprietary/vendor/lib64/libviamipc-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libviamipc-ril.so \
     vendor/duoqin/F25Pro/proprietary/vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apmonitor@2.0.so \
     vendor/duoqin/F25Pro/proprietary/vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so \
-    vendor/duoqin/F25Pro/proprietary/vendor/overlay/MtkTelephonyServiceResOverlay/MtkTelephonyServiceResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/MtkTelephonyServiceResOverlay/MtkTelephonyServiceResOverlay.apk \
     vendor/duoqin/F25Pro/proprietary/vendor/firmware/remoteproc_scp:$(TARGET_COPY_OUT_VENDOR)/firmware/remoteproc_scp \
     vendor/duoqin/F25Pro/proprietary/vendor/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc \
@@ -1064,12 +1061,6 @@ PRODUCT_COPY_FILES += \
     vendor/duoqin/F25Pro/proprietary/vendor/odm_dlkm/etc/build.prop:$(TARGET_COPY_OUT_VENDOR)/odm_dlkm/etc/build.prop \
     vendor/duoqin/F25Pro/proprietary/vendor/vendor_dlkm/etc/NOTICE.xml.gz:$(TARGET_COPY_OUT_VENDOR)/vendor_dlkm/etc/NOTICE.xml.gz \
     vendor/duoqin/F25Pro/proprietary/vendor/vendor_dlkm/etc/build.prop:$(TARGET_COPY_OUT_VENDOR)/vendor_dlkm/etc/build.prop \
-    vendor/duoqin/F25Pro/proprietary/vendor/overlay/CellbroadcastUIResOverlay/CellbroadcastUIResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/CellbroadcastUIResOverlay/CellbroadcastUIResOverlay.apk \
-    vendor/duoqin/F25Pro/proprietary/vendor/overlay/FrameworkResOverlay/FrameworkResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/FrameworkResOverlay/FrameworkResOverlay.apk \
-    vendor/duoqin/F25Pro/proprietary/vendor/overlay/FrameworkResOverlayExt/FrameworkResOverlayExt.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/FrameworkResOverlayExt/FrameworkResOverlayExt.apk \
-    vendor/duoqin/F25Pro/proprietary/vendor/overlay/MtkSettingsResOverlay/MtkSettingsResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/MtkSettingsResOverlay/MtkSettingsResOverlay.apk \
-    vendor/duoqin/F25Pro/proprietary/vendor/overlay/SettingsProviderResOverlay/SettingsProviderResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/SettingsProviderResOverlay/SettingsProviderResOverlay.apk \
-    vendor/duoqin/F25Pro/proprietary/vendor/overlay/SystemUIResOverlay/SystemUIResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/SystemUIResOverlay/SystemUIResOverlay.apk \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/fstab.enableswap:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/fstab.mt6768:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.mt6768 \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/init/aee_aedv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aee_aedv.rc \
@@ -2025,3 +2016,15 @@ PRODUCT_COPY_FILES += \
     vendor/duoqin/F25Pro/proprietary/vendor/res/images/lcd_test_00.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_00.png \
     vendor/duoqin/F25Pro/proprietary/vendor/res/images/lcd_test_01.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_01.png \
     vendor/duoqin/F25Pro/proprietary/vendor/res/images/lcd_test_02.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_02.png
+
+# Stock vendor RRO overlays (see Android.mk)
+PRODUCT_PACKAGES += \
+    CellbroadcastUIResOverlay \
+    FrameworkResOverlayExt \
+    FrameworkResOverlay \
+    MtkSettingsResOverlay \
+    MtkTelephonyServiceResOverlay \
+    SettingsProviderResOverlay \
+    SystemUIResOverlay \
+    WifiResMainlineOverlay \
+    WifiResOverlay
