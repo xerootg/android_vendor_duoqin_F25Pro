@@ -37,7 +37,6 @@ PRODUCT_COPY_FILES += \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/permissions/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml \
-    vendor/duoqin/F25Pro/proprietary/vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/lbs_hidl_service@1.0.xml \
     vendor/duoqin/F25Pro/proprietary/vendor/lib/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gps.default.so \
     vendor/duoqin/F25Pro/proprietary/vendor/lib/modules/c2k_usb_f_via_gps.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/c2k_usb_f_via_gps.ko \
     vendor/duoqin/F25Pro/proprietary/vendor/lib/modules/gps_drv_stp.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/gps_drv_stp.ko \
@@ -515,7 +514,6 @@ PRODUCT_COPY_FILES += \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml \
-    vendor/duoqin/F25Pro/proprietary/vendor/etc/vintf/manifest/power-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/power-default.xml \
     vendor/duoqin/F25Pro/proprietary/vendor/lib/android.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.thermal@1.0.so \
     vendor/duoqin/F25Pro/proprietary/vendor/lib/android.hardware.thermal@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.thermal@2.0.so \
     vendor/duoqin/F25Pro/proprietary/vendor/lib/hw/android.hardware.thermal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.thermal@1.0-impl.so \
@@ -570,9 +568,6 @@ PRODUCT_COPY_FILES += \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/permissions/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/permissions/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/permissions/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
-    vendor/duoqin/F25Pro/proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi.hostapd.xml \
-    vendor/duoqin/F25Pro/proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi.supplicant.xml \
-    vendor/duoqin/F25Pro/proprietary/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
@@ -613,7 +608,6 @@ PRODUCT_COPY_FILES += \
     vendor/duoqin/F25Pro/proprietary/vendor/overlay/WifiResOverlay/WifiResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/WifiResOverlay/WifiResOverlay.apk \
     vendor/duoqin/F25Pro/proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.4-service.widevine \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
-    vendor/duoqin/F25Pro/proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml \
     vendor/duoqin/F25Pro/proprietary/vendor/lib/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrm.so \
     vendor/duoqin/F25Pro/proprietary/vendor/lib/modules/widevine_driver.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/widevine_driver.ko \
     vendor/duoqin/F25Pro/proprietary/vendor/lib64/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrm.so \
@@ -621,7 +615,6 @@ PRODUCT_COPY_FILES += \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/permissions/android.hardware.vulkan.level.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/permissions/android.hardware.vulkan.version.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/permissions/android.software.vulkan.deqp.level.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
-    vendor/duoqin/F25Pro/proprietary/vendor/etc/vintf/manifest/manifest_hwcomposer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_hwcomposer.xml \
     vendor/duoqin/F25Pro/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
     vendor/duoqin/F25Pro/proprietary/vendor/lib/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_mali.so \
     vendor/duoqin/F25Pro/proprietary/vendor/lib/egl/libGLES_meow.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_meow.so \
@@ -676,7 +669,6 @@ PRODUCT_COPY_FILES += \
     vendor/duoqin/F25Pro/proprietary/vendor/bin/hw/android.hardware.keymaster@4.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.1-service \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service.rc \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service.rc \
-    vendor/duoqin/F25Pro/proprietary/vendor/etc/vintf/manifest/android.hardware.keymaster@4.1-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.keymaster@4.1-service.xml \
     vendor/duoqin/F25Pro/proprietary/vendor/lib/android.hardware.gatekeeper@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gatekeeper@1.0.so \
     vendor/duoqin/F25Pro/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl.so \
     vendor/duoqin/F25Pro/proprietary/vendor/lib/hw/libSoftGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libSoftGatekeeper.so \
@@ -1048,7 +1040,6 @@ PRODUCT_COPY_FILES += \
     vendor/duoqin/F25Pro/proprietary/vendor/thh/ta/d91f322ad5a441d5955110eda3272fc0.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/d91f322ad5a441d5955110eda3272fc0.ta \
     vendor/duoqin/F25Pro/proprietary/vendor/bin/hw/android.hardware.vibrator-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.vibrator-service.mediatek \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/init/vibrator-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vibrator-mtk-default.rc \
-    vendor/duoqin/F25Pro/proprietary/vendor/etc/vintf/manifest/vibrator-mtk-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vibrator-mtk-default.xml \
     vendor/duoqin/F25Pro/proprietary/vendor/firmware/aw862x_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw862x_haptic.bin \
     vendor/duoqin/F25Pro/proprietary/vendor/firmware/aw862xx_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw862xx_haptic.bin \
     vendor/duoqin/F25Pro/proprietary/vendor/firmware/awinic_params_mute.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/awinic_params_mute.bin \
@@ -1069,10 +1060,6 @@ PRODUCT_COPY_FILES += \
     vendor/duoqin/F25Pro/proprietary/vendor/odm/etc/build.prop:$(TARGET_COPY_OUT_VENDOR)/odm/etc/build.prop \
     vendor/duoqin/F25Pro/proprietary/vendor/odm/etc/group:$(TARGET_COPY_OUT_VENDOR)/odm/etc/group \
     vendor/duoqin/F25Pro/proprietary/vendor/odm/etc/passwd:$(TARGET_COPY_OUT_VENDOR)/odm/etc/passwd \
-    vendor/duoqin/F25Pro/proprietary/vendor/odm/etc/vintf/manifest_dsds.xml:$(TARGET_COPY_OUT_VENDOR)/odm/etc/vintf/manifest_dsds.xml \
-    vendor/duoqin/F25Pro/proprietary/vendor/odm/etc/vintf/manifest_qsqs.xml:$(TARGET_COPY_OUT_VENDOR)/odm/etc/vintf/manifest_qsqs.xml \
-    vendor/duoqin/F25Pro/proprietary/vendor/odm/etc/vintf/manifest_ss.xml:$(TARGET_COPY_OUT_VENDOR)/odm/etc/vintf/manifest_ss.xml \
-    vendor/duoqin/F25Pro/proprietary/vendor/odm/etc/vintf/manifest_tsts.xml:$(TARGET_COPY_OUT_VENDOR)/odm/etc/vintf/manifest_tsts.xml \
     vendor/duoqin/F25Pro/proprietary/vendor/odm_dlkm/etc/NOTICE.xml.gz:$(TARGET_COPY_OUT_VENDOR)/odm_dlkm/etc/NOTICE.xml.gz \
     vendor/duoqin/F25Pro/proprietary/vendor/odm_dlkm/etc/build.prop:$(TARGET_COPY_OUT_VENDOR)/odm_dlkm/etc/build.prop \
     vendor/duoqin/F25Pro/proprietary/vendor/vendor_dlkm/etc/NOTICE.xml.gz:$(TARGET_COPY_OUT_VENDOR)/vendor_dlkm/etc/NOTICE.xml.gz \
@@ -1465,17 +1452,6 @@ PRODUCT_COPY_FILES += \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/throttle.sh:$(TARGET_COPY_OUT_VENDOR)/etc/throttle.sh \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
-    vendor/duoqin/F25Pro/proprietary/vendor/etc/vintf/manifest/android.hardware.boot@1.2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.boot@1.2.xml \
-    vendor/duoqin/F25Pro/proprietary/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service-lazy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.cas@1.2-service-lazy.xml \
-    vendor/duoqin/F25Pro/proprietary/vendor/etc/vintf/manifest/android.hardware.health@2.1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.health@2.1.xml \
-    vendor/duoqin/F25Pro/proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-gpu.xml \
-    vendor/duoqin/F25Pro/proprietary/vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml \
-    vendor/duoqin/F25Pro/proprietary/vendor/etc/vintf/manifest/gnss-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/gnss-default.xml \
-    vendor/duoqin/F25Pro/proprietary/vendor/etc/vintf/manifest/gnss@2.1-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/gnss@2.1-service.xml \
-    vendor/duoqin/F25Pro/proprietary/vendor/etc/vintf/manifest/lights-mtk-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/lights-mtk-default.xml \
-    vendor/duoqin/F25Pro/proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.clearkey.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.clearkey.xml \
-    vendor/duoqin/F25Pro/proprietary/vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml \
-    vendor/duoqin/F25Pro/proprietary/vendor/etc/vintf/manifest/memtrack-mediatek.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/memtrack-mediatek.xml \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/duoqin/F25Pro/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
