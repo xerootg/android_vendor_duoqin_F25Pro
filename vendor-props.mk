@@ -5,7 +5,6 @@
 # dropped here so they cannot conflict with build-time values.
 
 PRODUCT_VENDOR_PROPERTIES += \
-    ro.minui.pixel_format=BGRA_8888 \
     ro.board.platform=mt6768 \
     ro.hwui.use_vulkan= \
     external_storage.projid.enabled=1 \
@@ -40,7 +39,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.debug.sf.cpupolicy.llbl_mask=0xff \
     vendor.debug.sf.cpupolicy.hw_comp_suspend=1 \
     vendor.debug.sf.cpupolicy.hw_hfr_suspend=1 \
-    ro.sf.lcd_density=320 \
     ro.vendor.mtklog_internal=1 \
     ro.vendor.composer_version=2.1 \
     vendor.camera.mdp.cz.enable=1 \
